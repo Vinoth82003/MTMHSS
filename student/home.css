@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home_page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  position: absolute;
+}
+
+.header {
+  width: 100%;
+  height: 110px;
+  background: #999;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 100;
+}
+
+.sidemenu {
+  width: 25px;
+  background: #fff;
+  height: 25px;
+  border-radius: 50%;
+  align-items: flex-start;
+  /* margin: 20px; */
+  position: absolute;
+  left: 20px;
+  top: 45px;
+  background-image: url(../icons/opnbtn.png);
+  background-size: 20px;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.profile {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  gap: 15px;
+}
+
+.pofileLogo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.pofileLogo .logoimg {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  background: #999;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.downicon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #000;
+  border-radius: 50%;
+  transition: 0.5s;
+  margin-left: -7px;
+}
+.profMenu {
+  height: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 100px;
+  position: absolute;
+  padding: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.profList {
+  /* margin-top: 10px; */
+  list-style-type: none;
+  padding: 7px 0;
+  width: 90%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  color: #6d0303;
+  visibility: hidden;
+}
+
+.profa {
+  text-decoration: none;
+  padding: 7px 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+  margin-left: 3px;
+  color: #6d0303;
+}
+
+.profile:hover .profMenu {
+  height: 45px;
+  background: #cfcfcf;
+}
+
+.profile:hover .profList {
+  visibility: visible;
+  border-bottom: 1px solid #000;
+}
+
+.profile:hover .downicon {
+  transition: 0s;
+  display: none;
+}
+
+.sidemenuContainer {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  background: #dfdede;
+  /* border: 1px solid #000; */
+  /* border-radius: 7px; */
+  left: -250px;
+  top: 108px;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.menuUl {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.sideMenuList {
+  width: 100%;
+  padding: 8px 0px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #000;
+  border-radius: 3px;
+  color: #fff;
+  list-style: none;
+  border-bottom: 3px solid #000;
+  /* z-index: 100; */
+}
+
+.sideMenuList.active {
+  color: #6d0303;
+  background: #fff;
+  border-radius: 6px 6px 0px 0px;
+  border-bottom: 3px solid #6d0303;
+  /* border-width: 50%; */
+  transition: all 0.5s;
+}
+
+.sideMenuList:hover .sideMenuList::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: rgb(218, 39, 224);
+  /* bottom: 0; */
+  left: 20%;
+  margin-top: 25px;
+  border-radius: 5px;
+  animation: list 1s ease-out forwards;
+}
+
+@keyframes list {
+  0%,
+  10%,
+  20% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+.discBox {
+  width: 500px;
+  height: 400px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  box-shadow: 0px 0px 10px #000;
+  border-radius: 7px;
+  border: 1px solid #6a6868;
+  position: absolute;
+}
+
+.markcontainer {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  /* position: absolute; */
+  /* border: 1px solid #000; */
+}
+
+.subname {
+  width: 150px;
+  border-right: 1px solid #000;
+  text-transform: capitalize;
+}
+
+.submark {
+  width: 50px;
+  border-right: 1px solid #000;
+  text-align: center;
+}
+
+.grade {
+  width: 50px;
+  /* border-right: 1px solid #000; */
+  text-align: center;
+}
+
+.innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #000;
+}
+
+.logout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 150px;
+}
+
+.logoutbtn {
+  padding: 7px 15px;
+  border-radius: 4px;
+  background: #2c2b2b;
+  color: #ddd;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.profDet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: -100%;
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.innerProf {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eeecec;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 20px #5f5f5f;
+  border-radius: 10px;
+}
+
+.detList {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid #fff; */
+}
+
+.detLi {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 20px;
+  color: rgb(0, 0, 0);
+}
+
+.name {
+  width: 125px;
+  text-transform: capitalize;
+}
+
+.result {
+  width: 125px;
+  text-transform: capitalize;
+}
+
+.closeProf {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .logout {
+    margin-top: 100px;
+  }
+
+  .profile {
+    height: 0;
+  }
+
+  .pofileLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .pofileLogo .logoimg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profMenu {
+    top: 90px;
+  }
+
+  .downicon {
+    width: 15px;
+    height: 15px;
+    margin-left: -15px;
+  }
+
+  .discBox {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ddd;
+    box-shadow: 0px 0px 10px #000;
+    border-radius: 7px;
+    border: 1px solid #6a6868;
+    position: absolute;
+    top: 150px;
+  }
+
+  .innerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 285px;
+    height: 325px;
+    border: 1px solid #000;
+}
+
+  .home_page {
+    overflow-y: visible;
+  }
+
+  .innerProf {
+    width: 90%;
+  }
+}

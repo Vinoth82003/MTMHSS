@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.home_page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 2px; */
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  height: -webkit-fill-available;
+}
+
+.schoolname {
+  width: 100vw;
+  height: 400px;
+  background: #010935;
+  margin-top: 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #4c6f75;
+background-image: url(/images/IMG_20230607_184152.png);
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: 100%;
+  background-position: center;
+}
+
+.top {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* backdrop-filter: blur(10px); */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo_img {
+  width: 100px;
+  height: 100px;
+}
+
+.topname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* backdrop-filter: blur(10px); */
+}
+
+.red {
+  color: rgb(3, 13, 59);
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.why {
+  width: 100%;
+  /* height: 200px; */
+  padding: 30px;
+  background: #010935;
+  margin: 1px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 100;
+  margin-top: -15px;
+}
+
+.high {
+  color: #c3c331;
+}
+
+.column {
+  width: 90%;
+  height: 300px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 3px;
+}
+
+.inner_column {
+  flex-basis: 30%;
+  width: 100%;
+  height: 90%;
+  border: 1px solid #ffff00;
+  border-radius: 5px;
+  overflow: hidden;
+  filter: blur(2px);
+  transition: 0.5s;
+  scale: 0.5;
+  left: 0;
+}
+
+.inner_column.active {
+  width: 95%;
+  scale: 1;
+  filter: blur(0px);
+}
+
+.img_boc {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.dicription{
+  width: 100%;
+  background: #bdbd0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.row{
+  width: 70%;
+  height: 200px;
+  border-radius: 5px;
+  /* border: 1px solid #fff; */
+  display: flex;
+}
+
+.rowColumn{
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* background: #010935; */
+}
+
+.discImg{
+  /* border: 2px solid #ffffff; */
+  /* border-radius: 50%; */
+  max-height: 120px;
+  padding: 10px;
+}
+
+.discUl{
+  list-style-type: none;
+  font-size: 23px;
+  color: #ffffff;
+  text-transform: capitalize;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.dicsCount{
+  font-size: 30px;
+}
+
+.whyDiff{
+  width: 100%;
+  padding: 20px;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner_diff{
+  width: 70%;
+  background: #313131;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.eight_power{
+  width: 90%;
+  height: 150px;
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+}
+
+.eightPowerImg{
+  flex-basis: 30%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eightPowerdisc{
+  flex-basis: 70%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.power_disc{
+  color: #ebd6d6;
+}
+
+
+/* .footer{
+  width: 100%;
+  height: 100px;
+  background: #010935;
+} */
+
+@media screen and (max-width: 425px) {
+
+  .column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    /* position: relative; */
+    border: none;
+  }
+
+  .logo{
+    width: 75px;
+    height: 75px;
+  }
+
+  .logo_img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .inner_column{
+    width: 90%;
+    height: 80%;
+    margin-left: 0px;
+  }
+
+  /* .staff_imgs{
+    position:relative;
+    margin-top: -100px;
+  } */
+
+  .inner_column.inner_column.active{
+    margin-left: 0;
+  }
+
+
+  .topname{
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    color: #ffffff;
+  }
+
+  .red{
+    color: #db0101;
+    font-size: 14px;
+  }
+
+  .schoolname{
+    height: 200px;
+    font-size:6px;
+    background-image: url(/images/top.jpg);
+  }
+
+  .row{
+    width: 100%;
+  }
+
+  .discImg{
+    max-width: 75px;
+  }
+
+  .discUl{
+    font-size: 14px;
+  }
+
+  .dicsCount{
+    font-size: 22px;
+  }
+
+  .inner_diff{
+    width: 100%;
+  }
+
+  .eight_power{
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .disc_img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .eightPowerdisc{
+    font-size: 10px;
+  }
+
+}

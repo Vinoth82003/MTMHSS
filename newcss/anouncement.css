@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.anoucement_container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  overflow-x: hidden;
+  gap: 20px;
+}
+
+.AnouncementBox {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.leave {
+  margin-top: 75px;
+}
+
+.leaveHead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heaadOfleave {
+  padding: 10px 25px;
+  background: #cccccc;
+  border-radius: 8px;
+  color: #010935;
+  font-weight: 600;
+  border: 1px solid #010935;
+  box-shadow: 0px 0px 5px;
+}
+
+.high {
+  color: #ffff00;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.leaveDiscUl {
+  width: 60%;
+  background: #d0d0d0;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.LeaveDisc {
+  text-transform: capitalize;
+  padding: 20px;
+  font-size: 18px;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+.innerLi {
+  margin: 10px 25px;
+}
+
+@media screen and (max-width: 425px) {
+  .heaadOfleave {
+    font-size: 22px;
+  }
+
+  .leaveDiscUl{
+    width: 100%;
+  }
+
+  .LeaveDisc {
+    font-size: 14px;
+  }
+}

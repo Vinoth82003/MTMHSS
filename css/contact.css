@@ -1,0 +1,285 @@
+.contact_container{
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+}
+
+.inner_container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #273db6;
+  border-radius: 5px;
+  padding: 10px;
+  top: 80px;
+}
+
+.message_form {
+  width: 500px;
+  background: #244633;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  border-radius: 7px;
+  border: 2px solid #3b553a;
+}
+
+.message {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.top_form {
+  width: 100%;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.left_form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right_form {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+label.active {
+  color: #a71a1a;
+}
+
+.input {
+  padding: 5px;
+  border: transparent;
+  background: transparent;
+  width: 90%;
+  outline: none;
+  border-bottom: 1px solid #000;
+  color: #000;
+  caret-color: #000;
+}
+textarea {
+  outline: none;
+  border-radius: 5px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  background: #3b553a;
+  color: #fff;
+  text-transform: capitalize;
+  width: 100px;
+  cursor: pointer;
+}
+
+.error {
+  background: #ce8b96;
+  padding: 5px 30px;
+  color: rgb(85, 33, 33);
+  border-left: 5px solid rgb(85, 33, 33);
+  animation: fadeOut 5s ease-in-out forwards;
+  position: absolute;
+  top: -40px;
+  z-index: 10px;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #7ac777;
+  padding: 20px;
+  color: rgb(5, 68, 31);
+  width: 280px;
+  height: 300px;
+  border-top: 5px solid rgb(5, 68, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* animation: fadeOutSuccess 3s ease-in-out forwards; */
+}
+
+.close_btn{
+  position: absolute;
+  bottom: 20px;
+  padding: 7px 30px ;
+  text-transform: capitalize;
+  background: #a71a1a;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@keyframes fadeOutSuccess{
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.contact_details {
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact_head {
+  width: 100%;
+}
+
+.info {
+  font-size: 25px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  color: #273db6;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 25px;
+}
+
+.li {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #7ac777;
+}
+
+.iconLists {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.icons_basic {
+  width: 25px;
+  height: 25px;
+  background: #3b553a;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.icons_basic:hover {
+  scale: 1.1;
+}
+
+.value {
+  display: flex;
+  gap: 20px;
+}
+
+.alert {
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 426px) {
+  .contact{
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .inner_container {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    background: #273db6;
+    border-radius: 5px;
+    top: 80px;
+    flex-direction: column;
+  }
+  .contact_details {
+    width: 300px;
+    background: #fff;
+    border-radius: 5px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .message_form {
+    width: 300px;
+    background: rgb(95, 201, 142);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border-radius: 7px ;
+    border: 2px solid #3b553a;
+  }
+}
